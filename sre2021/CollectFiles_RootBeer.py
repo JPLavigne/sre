@@ -46,7 +46,7 @@ def countfiles(dictfiles, lsttokens, repo):
 
 repo = 'scottyab/rootbeer'
 # put your tokens here
-lstTokens = ['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']
+lstTokens = ['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', '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']
 
 dictfiles = dict()
 countfiles(dictfiles, lstTokens, repo)
@@ -54,7 +54,7 @@ print('Total number of files: ' + str(len(dictfiles)))
 
 file = repo.split('/')[1]
 #change this to the path of your file
-fileOutput = 'C:\\Users\\JoeyD\\OneDrive\\Documents\\ETS\\7ieme session\\LOG530\\Lab4\\Rootbeer.csv'
+fileOutput = "../csv/partie2_rootbeer.csv"
 rows = ["Filename", "Touches"]
 fileCSV = open(fileOutput, 'w')
 writer = csv.writer(fileCSV)
