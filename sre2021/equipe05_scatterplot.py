@@ -53,5 +53,7 @@ with open('E:\\Github_Desktop\\ETS\\log530\\somecsv\\Rootbeer.csv') as csv_file:
             y.append(row['date'])
             number = number +1
             email.append(number)
+    y.sort()
     plt.scatter(x, y, c=email, cmap='nipy_spectral')
+    plt.grid(True)
     plt.show()
